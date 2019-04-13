@@ -71,17 +71,17 @@
 <img /> <!-- This div holds the funny image -->
 
 <button class="randomize">Next Round</button>
-<input type="file"> <!-- This is for development only. An image will be auto-fed after a screenshot is taken -->
-
 
 <script src="photo.js"></script>
+
     <div id="screenshot" style="text-align:center;">
     <video class="videostream" autoplay=""></video>
-    <img id="screenshot-img" src="">
-    <canvas style="display:none;"></canvas>
+    <img id="screenshot-img" src=""> <!-- This is the element that holds the screenshot -->
+    <canvas style="display:none;"></canvas> 
     <button class="capture-button">Capture video</button>
     </div>
     <button id="screenshot-button">Take screenshot</button>
+
     <script>
       function hasGetUserMedia() {
         return !!(navigator.mediaDevices &&
@@ -97,7 +97,7 @@
         video: true
       };
     const captureVideoButton =
-      document.querySelector('#screenshot .capture-button');
+    document.querySelector('#screenshot .capture-button');
     const screenshotButton = document.querySelector('#screenshot-button');
     const img = document.querySelector('#screenshot img');
     const video = document.querySelector('#screenshot video');
@@ -122,6 +122,9 @@
       video.srcObject = stream;
     }
     </script>
+
+<input type="file" /> <!-- This is for development only. An image will be auto-fed after a screenshot is taken -->
+
 <script src="upload.js"></script>
   </body>
 </html>
