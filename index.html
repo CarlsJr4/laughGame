@@ -67,17 +67,25 @@
 <img /> <!-- This div holds the funny image -->
 
 <button class="randomize">Next Round</button>
-<input type="file"> <!-- This is for development only. An image will be auto-fed after a screenshot is taken -->
-
 
 <script src="photo.js"></script>
+<<<<<<< HEAD
     <video id="video" autoplay=""></video>
     <div id="screenshot" style="text-align:center;">
     <img id="screenshot-img" src="">
     <!--canvas style="display:none;"></canvas>-->
     <!--<button class="capture-button">Capture video</button>-->
+=======
+
+    <div id="screenshot" style="text-align:center;">
+    <video class="videostream" autoplay=""></video>
+    <img id="screenshot-img" src=""> <!-- This is the element that holds the screenshot -->
+    <canvas style="display:none;"></canvas> 
+    <button class="capture-button">Capture video</button>
+>>>>>>> a2ead88614f0235471ffeff50aa40805b99d3c47
     </div>
     <button id="screenshot-button">Take screenshot</button>
+
     <script>
       function hasGetUserMedia() {
         return !!(navigator.mediaDevices &&
@@ -93,7 +101,11 @@
         video: true
       };
     const captureVideoButton =
+<<<<<<< HEAD
       document.querySelector('.randomize');
+=======
+    document.querySelector('#screenshot .capture-button');
+>>>>>>> a2ead88614f0235471ffeff50aa40805b99d3c47
     const screenshotButton = document.querySelector('#screenshot-button');
     const img = document.querySelector('#screenshot img');
     const video = document.querySelector('video');
@@ -119,6 +131,9 @@
       video.srcObject = stream;
     }
     </script>
+
+<input type="file" /> <!-- This is for development only. An image will be auto-fed after a screenshot is taken -->
+
 <script src="upload.js"></script>
   </body>
 </html>
