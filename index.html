@@ -68,19 +68,10 @@
     firebase.initializeApp(config);
 </script>
 
-<script>
-    // Root reference
-    var storageRef = firebase.storage().ref();
-
-    // Point to specific image
-    var fileName = 'Profile.jpg';
-    var url = storageRef.child(fileName).getDownloadURL().then(function(url) {
-        var img = document.querySelector('img');
-        img.src = url;
-    });
-</script>
-
 <img />
 
+<button class="randomize">Next Round</button>
+
+<script src="photo.js"></script>
   </body>
 </html>
