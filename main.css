@@ -1,7 +1,6 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
-  background-image: radial-gradient(circle, black, yellow, orange);
   background-repeat: no-repeat;
   min-height: 100%;
   background-color: #000000;
@@ -36,6 +35,7 @@ button:hover{
 	   background-color: #990000;
 	     color: #FFCC00;
 }
+
 
 img {
   width: 500px;
