@@ -71,9 +71,8 @@
 
 
 <script src="photo.js"></script>
-
-    <div id="screenshot" style="text-align:center;">
     <video id="video" autoplay=""></video>
+    <div id="screenshot" style="text-align:center;">
     <img id="screenshot-img" src="">
     <!--canvas style="display:none;"></canvas>-->
     <!--<button class="capture-button">Capture video</button>-->
@@ -97,13 +96,13 @@
       document.querySelector('.randomize');
     const screenshotButton = document.querySelector('#screenshot-button');
     const img = document.querySelector('#screenshot img');
-    const video = document.querySelector('#screenshot video');
+    const video = document.querySelector('video');
 
     const canvas = document.createElement('canvas');
 
     captureVideoButton.onclick = function() {
       navigator.mediaDevices.getUserMedia(constraints).
-      then(handleSuccess).catch(handleError);
+      then(handleSuccess);
     };
 
     screenshotButton.onclick = video.onclick = function() {
@@ -115,7 +114,8 @@
     };
 
     function handleSuccess(stream) {
-      screenshotButton.disabled = false;
+      //screenshotButton.disabled = false;
+
       video.srcObject = stream;
     }
     </script>
