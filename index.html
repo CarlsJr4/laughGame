@@ -69,22 +69,17 @@
 <button class="randomize">Next Round</button>
 
 <script src="photo.js"></script>
-<<<<<<< HEAD
     <video id="video" autoplay=""></video>
     <div id="screenshot" style="text-align:center;">
     <img id="screenshot-img" src="">
     <!--canvas style="display:none;"></canvas>-->
     <!--<button class="capture-button">Capture video</button>-->
-=======
 
     <div id="screenshot" style="text-align:center;">
     <video class="videostream" autoplay=""></video>
     <img id="screenshot-img" src=""> <!-- This is the element that holds the screenshot -->
     <canvas style="display:none;"></canvas> 
-    <button class="capture-button">Capture video</button>
->>>>>>> a2ead88614f0235471ffeff50aa40805b99d3c47
     </div>
-    <button id="screenshot-button">Take screenshot</button>
 
     <script>
       function hasGetUserMedia() {
@@ -101,26 +96,21 @@
         video: true
       };
     const captureVideoButton =
-<<<<<<< HEAD
       document.querySelector('.randomize');
-=======
-    document.querySelector('#screenshot .capture-button');
->>>>>>> a2ead88614f0235471ffeff50aa40805b99d3c47
-    const screenshotButton = document.querySelector('#screenshot-button');
     const img = document.querySelector('#screenshot img');
     const video = document.querySelector('video');
 
     const canvas = document.createElement('canvas');
 
-    captureVideoButton.onclick = function() {
+    //captureVideoButton.onclick = function() {
       navigator.mediaDevices.getUserMedia(constraints).
       then(handleSuccess);
-    };
+    //};
 
-    screenshotButton.onclick = video.onclick = function() {
-      canvas.width = 640;
-      canvas.height = 480;
-      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+    video.onclick = function() {
+      canvas.width = video.videoWidth;;
+      canvas.height = video.videoWidth;;
+      canvas.getContext('2d').drawImage(video, 0, 0);
       // Other browsers will fall back to image/png
       img.src = canvas.toDataURL('image/jpg');
     };
