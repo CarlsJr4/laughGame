@@ -2,16 +2,13 @@
 
 // Select HTML elements
 const randomPic = document.querySelector('.randomize');
-const jumbotron = document.querySelector('.jumbotron');
 
 // Root reference
 var storageRef = firebase.storage().ref();
 
-// Generate a random number for the image name 
-
 // Point to specific image
 function changeImg() {
-    const totalImages = 2;
+    const totalImages = 3;
 
     imageId = Math.floor(Math.random() * totalImages + 1); // Returns a random number from 0 to total size of gallery 
     console.log(imageId);
