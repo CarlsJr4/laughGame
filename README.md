@@ -1,4 +1,4 @@
-# ericCsharp.github.io
-agagagaga
+# https://carlsjr4.github.io/laughGame/
+Website Demo is at the top of the text
 
-ericCsharp.github.io
+Put suggestions here? idk
