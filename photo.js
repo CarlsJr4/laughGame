@@ -5,7 +5,6 @@ const randomPic = document.querySelector('.randomize');
 
 // Root reference
 var storageRef = firebase.storage().ref();
-console.log(storageRef);
 
 // Point to specific image
 function changeImg() {
