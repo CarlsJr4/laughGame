@@ -11,7 +11,6 @@ function changeImg() {
     const totalImages = 3;
 
     imageId = Math.floor(Math.random() * totalImages + 1); // Returns a random number from 0 to total size of gallery 
-    console.log(imageId);
 
     const fileName = `${imageId}.jpg`; // Replace this with file number
     const url = storageRef.child(fileName).getDownloadURL().then(function(url) {

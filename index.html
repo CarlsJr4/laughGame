@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="main.css">
     <!--I can't believe it is not bootstrap!-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
@@ -17,12 +17,12 @@
   <body>
     <h1><center>You Laugh you Lose the Game</center></h1>
     
-<div class="jumbotron">
+<div class="jumbotron text-center">
   <h1 class="display-4">Hello, world!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p>See how many rounds you can last without laughing</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Next Round</a>
 </div>
 
     <table class="table">
@@ -68,12 +68,14 @@
     firebase.initializeApp(config);
 </script>
 
-<img />
+<img /> <!-- This div holds the funny image -->
 
 <button class="randomize">Next Round</button>
+<input type="file"> <!-- This is for development only. An image will be auto-fed after a screenshot is taken -->
 
 
 <script src="photo.js"></script>
+<<<<<<< HEAD
     <div id="screenshot" style="text-align:center;">
     <video class="videostream" autoplay=""></video>
     <img id="screenshot-img" src="">
@@ -121,5 +123,8 @@
       video.srcObject = stream;
     }
     </script>
+=======
+<script src="upload.js"></script>
+>>>>>>> cd5e0955338928fff05294469f2dfbce3720f826
   </body>
 </html>

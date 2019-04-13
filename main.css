@@ -1,8 +1,13 @@
 /* CSS files add styling rules to your content */
-
+/*$enable-gradients
+*/
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  background-image: radial-gradient(circle, #FFC0CB, yellow, white);
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-color: #000000;
 }
 
 h1 {
@@ -11,5 +16,5 @@ h1 {
 }
 
 img {
-  width: 500px;
+  width: 500px !important;
 }
