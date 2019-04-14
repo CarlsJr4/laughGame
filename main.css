@@ -27,7 +27,7 @@ button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 100%;
+  width: 25%;
 }
 
 button:hover{
@@ -37,5 +37,8 @@ button:hover{
 
 
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 500px;
 }
